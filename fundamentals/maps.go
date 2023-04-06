@@ -5,9 +5,12 @@ import (
 )
 
 func main() {
-	week := make(map[string]int)
+	m := map[string]int{"three": 3, "four": 4}
+	m["one"] = 1
+	fmt.Println(m)
 
 	// add
+	week := make(map[string]int)
 	week["monday"] = 1
 	week["tuesday"] = 2
 	week["wednesday"] = 3
@@ -28,5 +31,4 @@ func main() {
 	fmt.Println(students)              //output: map[alex:[8 5] andres:[6 12]]
 	fmt.Println(students["andres"])    //output: [6 12]
 	fmt.Println(students["andres"][0]) //output: 6
-
 }
